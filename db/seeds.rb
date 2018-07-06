@@ -21,7 +21,7 @@ puts "5 skills created!"
     title: "P title #{portfolio1s}",
     subtitle: 'my great portfolio',
     body: 'Some text',
-    main_image: "http://via.placeholder.com/600x400",
+    main_image: "http://via.placeholder.com/600x400", 
     thumb_image: "http://via.placeholder.com/350x200"
     )
 end
