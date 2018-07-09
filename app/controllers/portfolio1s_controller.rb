@@ -1,5 +1,5 @@
 class Portfolio1sController < ApplicationController
-  before_action :set_portfolio, only: [:edit, :update, :show]
+  before_action :set_portfolio, only: [:edit, :update, :show, :destroy]
 
   def index
     @portfolios_items = Portfolio1.all
@@ -29,6 +29,12 @@ class Portfolio1sController < ApplicationController
       redirect_to portfolio1s_path, notice: 'Successfully Updated'
     else
       render 'edit'
+    end
+  end
+
+  def destroy
+    if @portfolio_item.destroy
+      redirect_to portfolio1s_path, notice: 'Record Removed!'
     end
   end
 
