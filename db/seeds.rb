@@ -1,7 +1,16 @@
+3.times do |topic|
+  Topic.create!(
+    title: "Topic #{topic}"
+    )
+end
+
+puts "3 Topics created"
+
 10.times do |blog|
   Blog.create!(
     title: "My Blog Post #{blog}",
-    body: "Some text"
+    body: "Some text",
+    topic_id: Topic.last.id
     )
 end
 
@@ -16,10 +25,20 @@ end
 
 puts "5 skills created!"
 
-9.times do |portfolio1s|
+8.times do |portfolio1s|
   Portfolio1.create!(
     title: "P title #{portfolio1s}",
-    subtitle: 'my great portfolio',
+    subtitle: 'Ruby on Rails',
+    body: 'Some text',
+    main_image: "http://via.placeholder.com/600x400", 
+    thumb_image: "http://via.placeholder.com/350x200"
+    )
+end
+
+1.times do |portfolio1s|
+  Portfolio1.create!(
+    title: "P title #{portfolio1s}",
+    subtitle: 'Angular',
     body: 'Some text',
     main_image: "http://via.placeholder.com/600x400", 
     thumb_image: "http://via.placeholder.com/350x200"
