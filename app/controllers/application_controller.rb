@@ -4,12 +4,6 @@ class ApplicationController < ActionController::Base
   include SetSource
   include CurrentUserConcern
   include DefaultPageContent
-
-  before_action :set_copyright
-
-  def set_copyright
-    @copyright = MslViewTool::Renderer.copyright 'Marcos Scorzoni', 'All rights reserved'
-  end
 end
 
 module MslViewTool

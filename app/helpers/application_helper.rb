@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: 'source-greeting' ) 
     end
   end
+
+  def set_copyright
+    @copyright = MslViewTool::Renderer.copyright 'Marcos Scorzoni', 'All rights reserved'
+  end
 end
