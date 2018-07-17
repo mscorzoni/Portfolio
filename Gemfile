@@ -45,3 +45,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2', '>= 5.2.4'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'bcrypt', '~> 3.1', '>= 3.1.12'
+gem 'bootstrap', '~> 4.1.1'
