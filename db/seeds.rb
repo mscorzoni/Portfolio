@@ -55,3 +55,13 @@ puts "9 Portfolios created!"
 end
 
 puts "3 Techs created!"
+
+User.create!(
+    email: "test@test.com",
+    name: "Test", 
+    roles: "site_admin",
+    password: '111111',
+    password_confirmation: '111111'
+  )
+
+puts 'Admin created!'
