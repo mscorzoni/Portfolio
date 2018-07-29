@@ -237,8 +237,24 @@ body {
 }
 
 
+.app-card-container {
+  color: black;
+  text-align: left;
+  opacity: 0.94;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+#profile-image {
+  border: 1px solid gray;
+}
 
 
+.app-card-container a {
+  color: blue;
+}
 
 
 
