@@ -24,6 +24,16 @@ a:hover {
 }
 
 
+h1 .h1,
+h2 .h2,
+h3 .h3,
+h4 .h4,
+h5 .h5,
+h6 .h6 {
+  font-family: 'Raleway', sans-serif; 
+}
+
+
 /*
  * Base structure
  */
@@ -31,6 +41,7 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 body {
   color: #fff;
@@ -237,13 +248,34 @@ body {
 }
 
 
+.app-card-container {
+  color: black;
+  text-align: left;
+  opacity: 0.94;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+#profile-image {
+  border: 1px solid gray;
+}
 
 
+.app-card-container a {
+  color: blue;
+}
 
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
-
-
-
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 
 

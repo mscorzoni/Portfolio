@@ -13,20 +13,19 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Open Sans', sans-serif;
   color: #555;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #333;
+h1 .h1,
+h2 .h2,
+h3 .h3,
+h4 .h4,
+h5 .h5,
+h6 .h6 {
+  font-family: 'Raleway', sans-serif; 
 }
+
 
 
 /*
@@ -188,4 +187,21 @@ h6, .h6 {
 
 .comment-name {
   font-weight: 700;
+}
+
+.blogcrumb a {
+  font-size: 1.25em;
+  margin-right: 30px;
+}
+
+.blog-masthead {
+  background-color: #6c757d;
+}
+.nav-owner {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
 }

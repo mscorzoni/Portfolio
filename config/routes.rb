@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   resources :portfolio1s, except: [:show] do
     put :sort, on: :collection
   end
+
+  resources :topics, only: [:index, :show]
+
   get 'portfolio/:id', to: 'portfolio1s#show', as: 'portfolio_show'
 
   get 'about', to: 'pages#about'
