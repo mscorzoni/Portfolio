@@ -65,3 +65,12 @@ User.create!(
   )
 
 puts 'Admin created!'
+
+User.create!(
+    email: "test2@test.com",
+    name: "Regular User", 
+    password: '111111',
+    password_confirmation: '111111'
+  )
+
+puts 'Regular user created!'
