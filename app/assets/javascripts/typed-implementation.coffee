@@ -1,7 +1,8 @@
 ready = ->
   Typed.new '.element',
     strings: [
-      'Test phrase'
+      'Thank you for visiting.'
+      'This is my portfolio homepage.'
     ]
     typeSpeed: 0
   return
