@@ -318,15 +318,23 @@ body {
 }
 
 .card-contact h1 {
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .card-contact h3 {
   font-size: 20px;
-  width: 150px;
 }
 
+#link-git a {
+ font-size: 35px;
+ color: black;
+ padding-left: 10px; 
+}
 
+.card-contact {
+  height: 500px;
+  width: 920px;
+}
 
 
 
