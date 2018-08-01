@@ -1,36 +1,78 @@
 <div class="app-card-container">
   <div class="card transparent">
-    <h1>About Me</h1>
+    <h3>About Me</h3>
     <hr>
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "https://avatars2.githubusercontent.com/u/16489757?s=400&u=c62c9ca6fac332fd8a8d9ce72f349532522dd819&v=4", width: 300, alt: 'profile image', id: 'profile-image' %>
 
         <div class="skills">
-          <% @skills.each do |skill| %>
-            <div class="skill">
-              <h4><%= skill.title  %></h4>
-              <div class="progress">
-                <div
-                class="progress-bar progress-bar-striped bg-warning"
-                role="progress-bar"
-                aria-valuenow="<%= skill.percent_utilized  %>"
-                aria-valuemax="100"
-                style="width: <%= skill.percent_utilized  %>%"
-                >  
-                </div>
+
+          <div class="skill">
+            <h4>Ruby on Rails</h4>
+            <div class="progress">
+              <div
+              class="progress-bar progress-bar-striped bg-primary"
+              role="progress-bar"
+              aria-valuenow="70%"
+              aria-valuemax="100"
+              style="width: 70%"
+              >  
               </div>
             </div>
-          <% end %>
+          </div>
+          
+          <div class="skill">
+            <h4>Ruby</h4>
+            <div class="progress">
+              <div
+              class="progress-bar progress-bar-striped bg-primary"
+              role="progress-bar"
+              aria-valuenow="60%"
+              aria-valuemax="100"
+              style="width: 60%"
+              >  
+              </div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <h4>Javascript</h4>
+            <div class="progress">
+              <div
+              class="progress-bar progress-bar-striped bg-primary"
+              role="progress-bar"
+              aria-valuenow="60%"
+              aria-valuemax="100"
+              style="width: 60%"
+              >  
+              </div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <h4>FrontEnd</h4>
+            <div class="progress">
+              <div
+              class="progress-bar progress-bar-striped bg-primary"
+              role="progress-bar"
+              aria-valuenow="60%"
+              aria-valuemax="100"
+              style="width: 60%"
+              >  
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
 
       <div class="col-md-8">
-        <p>My description</p>    
-
+        <p>An industrial engineer with twelve years of experience in management in well known companies such as Volkswagen and Faber-Castell. Last position as operations manager at Brazilian startup Printi in 2018. Since then, as I always loved technology, did a FullStack bootcamp at Le Wagon and started a career as web developer </p>    
         <p>
           <button
-            class="btn btn-primary"
+            class="btn btn-primary btn-custom"
             type="button"
             data-toggle="collapse"
             data-target="#jobHistory"
@@ -41,7 +83,7 @@
           </button>
 
           <button
-            class="btn btn-primary"
+            class="btn btn-primary btn-custom"
             type="button"
             data-toggle="collapse"
             data-target="#education"
@@ -54,22 +96,33 @@
 
         <p>
           <div class="collapse" id="jobHistory">
-            <div class="card card-block">
-              Job 1
+            <div class="card card-block job-card">
+              <p><i class="far fa-hand-point-right"></i><strong  style="font-size: 18px;color: #5386db;"> Printi</strong></p>
+              <p><i class="fas fa-user-tie"></i> Operations Manager <i class="far fa-calendar-alt"></i> 2017 to 2018</p>
             </div>
-            <div class="card card-block">
-              Job 2
+            <hr>
+            <div class="card card-block job-card">
+              <p><i class="far fa-hand-point-right"></i><strong  style="font-size: 18px;color: #5386db;"> Volkswagen</strong></p>
+              <p><i class="fas fa-user-tie"></i> Industrial Engineering Manager <i class="far fa-calendar-alt"></i> 2008 to 2016</p>
+            </div>
+            <hr>
+            <div class="card card-block job-card">
+              <p><i class="far fa-hand-point-right"></i><strong  style="font-size: 18px;color: #5386db;"> Faber-Castell</strong></p>
+              <p><i class="fas fa-user-tie"></i> Process Engineer <i class="far fa-calendar-alt"></i> 2004 to 2017</p>
             </div>
           </div>
         </p>
 
         <p>
           <div class="collapse" id="education">
-            <div class="card card-block">
-              School 1
+            <div class="card card-block job-card">
+              <p><i class="fas fa-user-graduate"></i><strong  style="font-size: 18px;color: #5386db;"> MBA Finance</strong></p>
+              <p><i class="fas fa-university"></i> University of Sao Paulo - Brazil <i class="far fa-calendar-alt"></i> 2009</p>
             </div>
-            <div class="card card-block">
-              School 2
+            <hr>
+            <div class="card card-block job-card">
+              <p><i class="fas fa-user-graduate"></i><strong  style="font-size: 18px;color: #5386db;"> Bsc, Industrial Engineering</strong></p>
+              <p><i class="fas fa-university"></i> University Federal SC - Brazil <i class="far fa-calendar-alt"></i> 2004</p>
             </div>
           </div>
         </p>

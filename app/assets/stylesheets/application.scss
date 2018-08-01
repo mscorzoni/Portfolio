@@ -255,7 +255,7 @@ body {
 }
 
 .app-card-container > .card {
-  padding: 40px;
+  padding: 20px;
 }
 
 #profile-image {
@@ -282,6 +282,47 @@ body {
   display: block-inline;
   justify-content: center;
 }
+
+.skill h4 {
+  font-size: 16px;
+}
+
+.transparent {
+ 
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.progress {
+  height: 0.5rem;
+}
+
+#profile-image {
+  width: 250px;
+}
+
+.btn-custom {
+  background-color: #6c757d;
+  border: none;
+}
+.btn-custom:hover {
+  background-color: #3A3E40;
+  border: none;
+}
+
+.job-card {
+  border: none;
+  padding: 2px;
+  height: 65px;
+  margin-top: 5px;
+}
+
+
+
+
+
+
+
 
 
 
