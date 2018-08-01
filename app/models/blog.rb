@@ -8,6 +8,9 @@ class Blog < ApplicationRecord
   
   has_many :comments, dependent: :destroy
 
+  geocoded_by :body
+  after_validation :geocode, if: :will_save_change_to_address?
+
   def self.special_blogs
     all
   end
