@@ -93,6 +93,7 @@ footer p {
 
 .portfolio-container {
   padding-top: 30px;
+  height: 650px;
 }
 
 .text-muted {
@@ -100,3 +101,11 @@ footer p {
   padding-top: 5px;
 }
 
+.btn-custom {
+  background-color: #6c757d;
+  border: none;
+}
+.btn-custom:hover {
+  background-color: #3A3E40;
+  border: none;
+}

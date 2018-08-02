@@ -25,36 +25,46 @@ end
 
 puts "5 skills created!"
 
-8.times do |portfolio1s|
-  Portfolio1.create!(
-    title: "P title #{portfolio1s}",
-    subtitle: 'Ruby on Rails',
-    body: 'Some text',
-    main_image: "http://via.placeholder.com/600x400", 
-    thumb_image: "http://via.placeholder.com/350x200"
-    )
-end
+# 8.times do |portfolio1s|
+#   Portfolio1.create!(
+#     title: "P title #{portfolio1s}",
+#     subtitle: 'Ruby on Rails',
+#     body: 'Some text',
+#     main_image: "http://via.placeholder.com/600x400", 
+#     thumb_image: "http://via.placeholder.com/350x200"
+#     )
+# end
 
-1.times do |portfolio1s|
-  Portfolio1.create!(
-    title: "P title #{portfolio1s}",
-    subtitle: 'Angular',
-    body: 'Some text',
-    main_image: "http://via.placeholder.com/600x400", 
-    thumb_image: "http://via.placeholder.com/350x200"
-    )
-end
+  m = Portfolio1.create!(
+        title: "Easy Blood",
+        subtitle: 'Bring donor together to save lives',
+        body: 'Bringing people together by geolocation and preferred schedule generating crowdsourced campaings to save lives',
+        main_image: "thumb.png", 
+        thumb_image: "thumb.png"
+        )
+  Technology.create!(name: 'Ruby On Rails', portfolio1_id: m.id)
+  Technology.create!(name: 'Javascript', portfolio1_id: m.id)
+
+  n = Portfolio1.create!(
+        title: "Overtime",
+        subtitle: 'Controlling employees overtime',
+        body: 'App developed to a company controls employees overtime request, admin approval and dashboard metrics',
+        main_image: "overtime.png", 
+        thumb_image: "overtime.png"
+        )
+  Technology.create!(name: 'Ruby On Rails', portfolio1_id: n.id)
+  Technology.create!(name: 'Javascript', portfolio1_id: n.id)
 
 
-puts "9 Portfolios created!"
+puts "2 Portfolios created!"
 
-3.times do |technology|
-  Portfolio1.last.technologies.create!(
-    name: "Technology #{technology}"
-    )
-end
+# 3.times do |technology|
+#   Portfolio1.last.technologies.create!(
+#     name: "Technology #{technology}"
+#     )
+# end
 
-puts "3 Techs created!"
+# puts "3 Techs created!"
 
 User.create!(
     email: "test@test.com",

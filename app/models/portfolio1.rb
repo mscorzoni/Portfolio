@@ -7,8 +7,8 @@ class Portfolio1 < ApplicationRecord
 
   scope :ruby_on_rails_portfolio_items,  -> { where(subtitle: 'Ruby on Rails') }
 
-  mount_uploader :thumb_image, PortfolioUploader
-  mount_uploader :main_image, PortfolioUploader
+  # mount_uploader :thumb_image, PortfolioUploader
+  # mount_uploader :main_image, PortfolioUploader
 
 
   def self.by_position
