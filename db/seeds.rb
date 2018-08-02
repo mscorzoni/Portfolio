@@ -40,7 +40,8 @@ puts "5 skills created!"
         subtitle: 'Bring donor together to save lives',
         body: 'Bringing people together by geolocation and preferred schedule generating crowdsourced campaings to save lives',
         main_image: "thumb.png", 
-        thumb_image: "thumb.png"
+        thumb_image: "thumb.png",
+        name: "https://github.com/mscorzoni/Overtime"
         )
   Technology.create!(name: 'Ruby On Rails', portfolio1_id: m.id)
   Technology.create!(name: 'Javascript', portfolio1_id: m.id)
@@ -50,7 +51,8 @@ puts "5 skills created!"
         subtitle: 'Controlling employees overtime',
         body: 'App developed to a company controls employees overtime request, admin approval and dashboard metrics',
         main_image: "overtime.png", 
-        thumb_image: "overtime.png"
+        thumb_image: "overtime.png",
+        name: "https://github.com/mscorzoni/Overtime"
         )
   Technology.create!(name: 'Ruby On Rails', portfolio1_id: n.id)
   Technology.create!(name: 'Javascript', portfolio1_id: n.id)

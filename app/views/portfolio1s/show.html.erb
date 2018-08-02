@@ -16,7 +16,7 @@
         <p><%= t.name  %></p>
       <% end %>
       <hr>
-      <h4>Github Repo</h4>
+      <p><%= link_to 'Github Repo', @portfolio_item.name  %></p>
 
       <% if logged_in?(:site_admin)  %>
         <div>
